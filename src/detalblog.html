@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Detal blog
+    </title>
     <link rel="stylesheet" href="./output.css">
 </head>
 <body>
@@ -13,24 +14,24 @@
             <img src="./img/Logo.png" alt="">
             <div class="flex gap-[80px] items-center">
                 <ul class="hidden sm:flex gap-[60px] text-[#1D1E25] text-[18px]">
-                    <li>Home </li>
-                    <li>About</li>
-                    <li>Blog</li>
-                    <li>Pricing</li>
+                    <li class="hover:underline "><a href="./home.html" target="_blank">Home</a> </li>
+                    <li class="hover:underline "> <a href="./about.html" target="_blank">About</a></li>
+                    <li class="hover:underline"> <a href="./home.html" target="_blank">Blog</a></li>
+                    <li class="hover:underline "><a href="./pricing.html" target="_blank">Pricing</a> </li>
                 </ul>
-                    <p class="text-[#1D1E25] text-[18px] font-bold pb-[5px] border-solid border-b-2 border-black">Contact us -></p>
+                    <p class=" text-[18px] font-bold pb-[5px] border-solid border-b-2 hover:text-[#f5dfd0] sm:border-[#f5dfd0] text-black" > <a href="./contacts.html" target="_blank">Contact us -></a></p>
                 
             </div>
         </nav>
     </header>
 
     
-        <p class="font-bold text-[80px] w-[1000px] m-auto">How we perform long-running tasks using AWS services</p>
+        <p class="font-bold text-[30px] px-[50px] sm:px-[0px] sm:text-[80px] sm:w-[1000px] m-auto">How we perform long-running tasks using AWS services</p>
 
-        <div class=" px-[175px] py-[90px]">
+        <div class=" sm:px-[175px] py-[90px]">
 
             
-            <div class="flex justify-between items-center w-[1000px] py-[40px]">
+            <div class="flex flex-col sm:flex-row  gap-[30px] sm:gap-[0px] justify-between items-center sm:w-[1000px] py-[40px]">
                 <div class="flex gap-[20px] items-center">
                     <img src="./img/Ellipse 15.png" alt="">
                     <div>
@@ -49,8 +50,8 @@
                 <p class="text-[20px] py-[70px] ">Our initial approach went like this: The web application would read a .csv file line-by-line and submit an array of entries to the backend REST API. Processing is in real time, immediately after the user makes a request for the process to start, he expects a result. Another approach is to apply vertical scaling to AWS architecture. Meaning we used larger, more expensive instances that have more RAM and processing power. This system worked well for smaller datasets, maybe up to 5k entries, but for larger datasets multiple problems arose. This solution is prone to failure due to long request time. Also, because of some 3rd party services that aren’t optimized for large scale loads or they don’t have batch endpoints. 3rd party services also tend to protect their architecture from making a huge bill on their end. The whole process was done in real-time. The request can take a lot of time hanging in there while the backend would do all the work and return the result to the client. The request was limited to 300 seconds (at time of writing the article) before AWS would cancel it… Also I need to mention that the user has to wait a few minutes to see the results. They can’t use the app during the process, which makes for a bad user experience.</p>
         </div>
 
-        <div class="flex justify-center gap-[80px] w-[940px] h-[390px] m-auto pb-[130px]">
-            <img class="w-[200px] h-[200px]" src="./img/Rectangle 45.png" alt="">
+        <div class="flex flex-col sm:flex-row justify-center gap-[80px] sm:w-[940px] h-[600px] sm:h-[390px] m-auto pb-[130px]">
+            <img class="w-[400px] sm:w-[200px] h-[300px] sm:h-[200px]" src="./img/Rectangle 45.png" alt="">
             <div class="flex flex-col gap-[20px] ">
                 <img class="w-[383px] h-[32px]" src="./img/Frame 1171275083.png" alt="">
                 <p class="text-[gray]">Written by</p>

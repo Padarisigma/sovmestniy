@@ -12,12 +12,12 @@
             <img src="./img/Logo (10).png" alt="">
             <div class="flex gap-[80px] items-center">
                 <ul class="hidden sm:flex gap-[60px] text-[#1D1E25] text-[18px]">
-                    <li>Home </li>
-                    <li>About</li>
-                    <li>Blog</li>
-                    <li>Pricing</li>
+                    <li class="hover:underline"><a href="./home.html" target="_blank">Home</a> </li>
+                    <li class="hover:underline "> <a href="./about.html" target="_blank">About</a></li>
+                    <li class="text-[#f5dfd0]"> Blog</li>
+                    <li class="hover:underline "><a href="./pricing.html" target="_blank">Pricing</a> </li>
                 </ul>
-                    <p class="text-[#1D1E25] text-[18px] font-bold pb-[5px] border-solid border-b-2 border-black">Contact us -></p>
+                    <p class="text-[#1D1E25] text-[18px] font-bold pb-[5px] border-solid border-b-2 hover:text-[#f5dfd0] border-black"> <a href="./contacts.html" target="_blank">Contact us -></a></p>
                 
             </div>
         </nav>
@@ -30,7 +30,7 @@
                 <p class="text-[#1D1E25] text-[30px]">Our biggest challenge is making sure we're <br> always designing and building products that <br> will help you run your business better.</p>    
                 </div>
 
-                <div class="flex gap-[50px] py-[60px] text-[18px] text-[#7E8492]">
+                <div class="flex gap-[20px] sm:gap-[50px] py-[20px] sm:py-[60px] text-[18px] text-[#7E8492]">
                     <p class="border-solid border-b-2 border-black text-black">View all</p>
                     <p>Design</p>
                     <p>Articles</p>
@@ -66,27 +66,141 @@
                 </section>
 
                 <img src="./img/Ellipse 125.png" alt="" class="absolute top-0 left-[-30px]">
-                <img src="./img/Ellipse 124.png" alt="" class="absolute top-[300px] right-0">
+                <img src="./img/Ellipse 124.png" alt="" class="hidden sm:block absolute top-[300px] right-0">
                
             </aside>
         </section>
     </header>
 
     <main>
-        <section>
-            <div>
-                <aside>
-                    <img src="./img/Rectangle 34.png" alt="">
-                    <p class="text-[40px]">How we perform long-running tasks using AWS services</p>
+        <section class="w-[100%] bg-[#1D1E25] py-[80px]">
+            <div class="w-[85%] m-auto  flex flex-col sm:flex-row gap-[50px] ">
+               <div class="sm:w-[50%] flex flex-col gap-[30px] sm:gap-[190px]  ">
+
+                <aside class="flex flex-col gap-[30px] ">
+                    <img src="./img/Rectangle 34.png" alt="" class="w-[100%]">
+                    <p class="text-[40px] text-white">How we perform long-running tasks using AWS services</p>
                     <p class="text-[#7E8492] text-[18px]">Webflow is web design tool as well as a hosting platform <br> and CMS all in one. While you are probably familiar with all  <br>of these, they are usually entirely separate tools.</p>
                 </aside>
-                <aside>
-                    <img src="./img/Rectangle 35.png" alt="">
-                    <p class="text-[40px]">How we perform long-running tasks using AWS services</p>
-                    <p class="text-[#7E8492] text-[18px]">Webflow is web design tool as well as a hosting platform <br> and CMS all in one. While you are probably familiar with all  <br>of these, they are usually entirely separate tools.</p>
+                <aside class=" flex flex-col gap-[30px]">
+                    <img src="./img/Rectangle 35.png" alt="" class="w-[100%]">
+                    <p class="text-[40px] text-white">Layout Exploration — Simple <br> exercise but big effect</p>
+                    <p class="text-[#7E8492] text-[18px]">Make alternatives or other options for the design we are making.
+                        For example, we are <br> creating a website design. <br> Then there is the testimonial section.</p>
                 </aside>
             </div>
+
+            <div class="sm:w-[50%] flex flex-col gap-[30px] sm:gap-[180px]  ">
+
+                <aside class=" flex flex-col gap-[20px]">
+                    <img src="./img/Rectangle 35.png" alt="" class="w-[100%]">
+                    <p class="text-[40px] text-white">Layout Exploration — Simple <br> exercise but big effect</p>
+                    <p class="text-[#7E8492] text-[18px]">Make alternatives or other options for the design we are making.
+                        For example, we are <br> creating a website design. <br> Then there is the testimonial section.</p>
+                </aside>
+                <aside class="flex flex-col gap-[30px] ">
+                    <img src="./img/Rectangle 34.png" alt="" class="w-[100%]">
+                    <p class="text-[40px] text-white">How we perform long-running tasks using AWS services</p>
+                    <p class="text-[#7E8492] text-[18px]">Webflow is web design tool as well as a hosting platform <br> and CMS all in one. While you are probably familiar with all  <br>of these, they are usually entirely separate tools.</p>
+                </aside>
+               
+            </div>
+            </div>
+            
+           
+        </section>
+
+        <section class="w-[85%] m-auto flex flex-col sm:flex-row justify-between gap-[30px] sm:gap-[0px] sm:items-center pt-[100px] pb-[70px]">
+            <div>
+                <p class="text-[#1D1E25] text-[56px]">Articles</p>
+                <p class="text-[#7E8492] text-[18px]">Complex tech decoded by engineers, business <br> trends analyzed by experts.</p>
+            </div>
+
+            <div>
+                <img src="./img/Button Arrow.png" alt="">
+            </div>
+        </section>
+
+
+        <section class="w-[85%] m-auto grid pb-[60px] gap-[50px] sm:gap-[20px] sm:grid-cols-3">
+            <aside class="flex flex-col gap-[20px] items-start">
+                <img src="./img/Image (64).png" alt="" >
+                <p class="text-[#1D1E25] text-[32px]">List of UX Designer  <br>Portfolio / Case Studies <br> where you can make money</p>
+                <p class="text-[#7E8492] text-[18px]">Here are some portfolios / Case Studies from <br> UX Designers that you can use as a reference <br>for creating a portfolio. Two interesting things <br>from their portfolio are:</p>
+                <button class="py-[10px] px-[60px] rounded-[20px] bg-transparent border-solid border-2 border-gray-300 text-black text-[18px]"><a href="./detalblog.html" target="_blank">Read more</a> </button>
+            </aside>
+            <aside class="flex flex-col gap-[20px] items-start">
+                <img src="./img/Image (65).png" alt="" >
+                <p class="text-[#1D1E25] text-[32px]">List of UX Designer  <br>Portfolio / Case Studies <br> where you can make money</p>
+                <p class="text-[#7E8492] text-[18px]">Here are some portfolios / Case Studies from <br> UX Designers that you can use as a reference <br>for creating a portfolio. Two interesting things <br>from their portfolio are:</p>
+                <button class="py-[10px] px-[60px] rounded-[20px] bg-transparent border-solid border-2 border-gray-300 text-black text-[18px]"><a href="./detalblog.html" target="_blank">Read more</a> </button>
+            </aside>
+            <aside class="flex flex-col gap-[20px] items-start">
+                <img src="./img/Image (66).png" alt="" >
+                <p class="text-[#1D1E25] text-[32px]">List of UX Designer  <br>Portfolio / Case Studies <br> where you can make money</p>
+                <p class="text-[#7E8492] text-[18px]">Here are some portfolios / Case Studies from <br> UX Designers that you can use as a reference <br>for creating a portfolio. Two interesting things <br>from their portfolio are:</p>
+                <button class="py-[10px] px-[60px] rounded-[20px] bg-transparent border-solid border-2 border-gray-300 text-black text-[18px]"> <a href="./detalblog.html" target="_blank">Read more</a> </button>
+            </aside>
         </section>
     </main>
+
+    <footer class="relative top-0 pt-[60px] overflow-hidden">
+        <section class="w-[85%] m-auto pt-[100px] realtive  gap-[30px] sm:gap-[0px] flex flex-col sm:flex-row justify-between ">
+            <aside class="flex flex-col gap-[30px] ">
+                <p class="text-[#1D1E25] text-[30px] sm:text-[70px] mb-[30px] font-bold sm:leading-[120px]">Think beyond the wave</p>
+                <div class="flex  gap-[20px]">
+                 <hr class="w-[100px] mt-[30px] border-solid border-t-2 border-black"> 
+                <p class="text-[#1D1E25] text-[18px] sm:text-[30px]">Ask about Sans products, pricing, <br>implementation, or anything else. Our highly <br>trained reps are standing by, ready to help</p>    
+                </div>
+                
+               
+            </aside>
+            <aside class="relative top-0 flex flex-col justify-center">
+                <button class="py-[15px] relative z-10 px-[50px] rounded-[30px] bg-black text-white tracking-[2px]">Try for free</button>
+            </aside>
+        </section>
+
+        <section class="w-[85%] py-[100px] border-b-2 border-solid border-gray-400 justify-between flex flex-col sm:flex-row gap-[40px] m-auto">
+            <div>
+                <img src="./img/Logo (10).png" alt="">
+                <p class="text-[#1D1E25] text-[16px]">We built an elegant solution. Our team <br> created a fully integrated sales and <br> marketing solution for SMBs</p>
+            </div>
+            <div class="flex flex-col gap-[15px]">
+                <p class="text-[#1D1E25] font-bold">Company</p>
+                <p>Pricing</p>
+                <p>About</p>
+                <p>Blog</p>
+                <p>Jobs</p>
+            </div>
+            <div class="flex flex-col gap-[15px]">
+                <p class="text-[#1D1E25] font-bold">Product</p>
+                <p>Sales Software</p>
+                <p>Marketplace</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="flex flex-col gap-[15px]">
+                <p class="text-[#1D1E25] font-bold">Discover</p>
+                <p>CRM Comparision</p>
+                <p>Partner Program</p>
+                <p>What is CRM</p>
+                <p>Resource</p>
+            </div>
+            <div class="flex flex-col relative z-10 gap-[15px]">
+                <p class="text-[#1D1E25] font-bold">Help Center</p>
+                <p>Community</p>
+                <p>Knowledge Base</p>
+                <p>Academy</p>
+                <p>Support</p>
+            </div>
+        </section>
+
+        <div class="text-[#AFB3BB] text-[18px] text-center tracking-[2px] py-[30px]">
+            <p>© Copyright 2023 All Rights Reserved</p>
+        </div>
+
+        <img src="./img/Ellipse 125.png" alt="" class="absolute top-0 left-0 sm:left-[150px]">
+        <img src="./img/Ellipse 124.png" alt="" class="absolute hidden sm:block top-[50px] right-[-110px]">
+    </footer>
 </body>
 </html>

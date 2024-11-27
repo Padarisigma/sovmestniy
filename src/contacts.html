@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
     
-    <div class="flex p-[20px] px-[60px] justify-between">
-        <div>
-            <img src="/src/img/Logo.png" alt="">
+  <header>
+    <nav class="w-[85%] items-center  m-auto flex py-[20px] justify-between"> 
+        <img src="./img/Logo (10).png" alt="">
+        <div class="flex gap-[80px] items-center">
+            <ul class="hidden sm:flex gap-[60px] text-[#1D1E25] text-[18px]">
+                <li class="hover:underline "><a href="./home.html" target="_blank">Home</a> </li>
+                <li class="hover:underline "> <a href="./about.html" target="_blank">About</a></li>
+                <li class="hover:underline"> <a href="./home.html" target="_blank">Blog</a></li>
+                <li class="hover:underline "><a href="./pricing.html" target="_blank">Pricing</a> </li>
+            </ul>
+                <p class=" text-[18px] font-bold pb-[5px] border-solid border-b-2  sm:border-[#f5dfd0] sm:text-[#f5dfd0]" > <a href="./contacts.html" target="_blank">Contact us -></a></p>
+            
         </div>
+    </nav>
+  </header>
 
-        <div class="flex gap-[20px]">
-            <p>Home</p>
-            <p>About</p>
-            <p>Blog</p>
-            <p>Pricing</p>
-            <a href="">Contact US -></a>
-        </div>
-    </div>
-
-    <h1 class="font-bold text-[70px]  w-[740px] p-[20px] px-[60px]">Contact our team to find out more</h1>
-    <div class="flex justify-center m-auto gap-[200px]  p-[40px] w-[1246px] h-[547px]">
+    <h1 class="font-bold text-[40px] sm:text-[70px]  sm:w-[740px] p-[20px] sm:px-[60px]">Contact our team to find out more</h1>
+    <div class="flex flex-col sm:flex-row justify-center m-auto gap-[50px] sm:gap-[200px] sm:mt-[0px] mt-[200px] p-[40px] sm:w-[1246px] h-[547px]">
         <img src="/src/img/Map.png" alt="">
         <div class="flex flex-col gap-[30px]">
             <div class="border-b-2 border-black w-[180px] h-[130px]">
@@ -43,19 +45,19 @@
             </div>
         </div>
     </div>
-    <div class="p-[130px] flex items-center ">
+    <div class="p-[100px] sm:p-[130px] flex flex-col sm:flex-row px-[40px] sm:items-center ">
         <div class="w-[430px]">
-            <p class="font-bold text-[70px]">890+</p>
-            <p class="text-[gray] text-[25px]">Some big companies that we work with, and trust us very much</p>
+            <p class="font-bold text-[30px] sm:text-[70px]">890+</p>
+            <p class="text-[gray] text-[18px] w-[350px]  sm:text-[25px]">Some big companies that we work with, and trust us very much</p>
         </div>
         <div>
-            <div class="flex gap-[20px]">
+            <div class="flex flex-col sm:flex-row items-start gap-[20px]">
                 <img src="/src/img/Airbnb Logo (1).png" alt="">
                 <img src="/src/img/Amazon Logo (1).png" alt="">
                 <img src="/src/img/FedEx Logo.png" alt="">
                 <img src="/src/img/Microsoft Logo.png" alt="">
             </div>
-            <div class="flex gap-[20px]">
+            <div class="flex flex-col sm:flex-row items-start  gap-[20px]">
                 <img src="/src/img/Google Logo.png" alt="">
                 <img src="/src/img/OLA Logo.png" alt="">
                 <img src="/src/img/Walmart Logo.png" alt="">
@@ -63,35 +65,35 @@
             </div>
         </div>
     </div>
-    <div class="flex p-[90px] gap-[20px]">
-        <div class="w-[515px] h-[170px] flex flex-col gap-[30px] ">
+    <div class="flex flex-col sm:flex-row p-[30px] sm:p-[90px] gap-[20px]">
+        <div class="w-[350px] sm:w-[515px] h-[170px] mb-[500px] flex flex-col gap-[30px] ">
             <h1 class="font-bold text-[30px]">Let’s level up your brand</h1>
             <p class="text-[gray]">You can reach us anytime hellosansbrothers@gmail.com</p>
             <div class="flex gap-[20px]">
                 <div>
                     <p>First name</p>
-                    <input class="w-[240px] h-[30px] border-2 border-gray-500" type="text" placeholder="First name">
+                    <input class="w-[150px] sm:w-[240px] h-[30px] border-2 border-gray-500" type="text" placeholder="First name">
                 </div>
                 <div>
                     <p>Last name</p>
-                    <input class="w-[270px] h-[30px] border-2 border-gray-500 " type="text" placeholder="Last name">
+                    <input class="w-[150px] sm:w-[240px] h-[30px] border-2 border-gray-500 " type="text" placeholder="Last name">
                 </div>
             </div>
             <div>
                 <p>Email</p>
-                <input class="w-[529px] h-[30px] border-2 border-gray-500" type="text" placeholder="you@company.com">
+                <input class="w-[320px] sm:w-[529px] h-[30px] border-2 border-gray-500" type="text" placeholder="you@company.com">
             </div>
             <div>
                 <p>Phone number</p>
-                <input class="w-[529px] h-[30px] border-2 border-gray-500" type="text" placeholder="+1 (555) 000-0000">
+                <input class="w-[320px] sm:w-[529px] h-[30px] border-2 border-gray-500" type="text" placeholder="+1 (555) 000-0000">
             </div>
             <div>
                 <p>Message</p>
-                <textarea class="w-[528px] h-[100px] border-2 border-gray-500"  placeholder="Leave us a message..." name="" id="" placeholder=""></textarea>
+                <textarea class="w-[320px] sm:w-[528px] h-[100px] border-2 border-gray-500"  placeholder="Leave us a message..." name="" id="" placeholder=""></textarea>
         </div>
         <button class="bg-gray-900 text-[white] w-[200px] h-[50px] rounded-[30px]">Get Started</button>
     </div>
-    <img class="w-[700px]" src="/src/img/Image.png" alt="">
+    <img class="hidden sm:block w-[700px]" src="/src/img/Image.png" alt="">
 </div>
 
 
