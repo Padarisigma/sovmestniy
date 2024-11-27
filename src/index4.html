@@ -8,5 +8,115 @@
 </head>
 <body>
     
+    <header>
+        <nav class="w-[85%] items-center  m-auto flex py-[20px] justify-between"> 
+            <img src="./img/Logo.png" alt="">
+            <div class="flex gap-[80px] items-center">
+                <ul class="hidden sm:flex gap-[60px] text-[#1D1E25] text-[18px]">
+                    <li>Home </li>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Pricing</li>
+                </ul>
+                    <p class="text-[#1D1E25] text-[18px] font-bold pb-[5px] border-solid border-b-2 border-black">Contact us -></p>
+                
+            </div>
+        </nav>
+    </header>
+
+    
+        <p class="font-bold text-[80px] w-[1000px] m-auto">How we perform long-running tasks using AWS services</p>
+
+        <div class=" px-[175px] py-[90px]">
+
+            
+            <div class="flex justify-between items-center w-[1000px] py-[40px]">
+                <div class="flex gap-[20px] items-center">
+                    <img src="./img/Ellipse 15.png" alt="">
+                    <div>
+                        
+                        <p class="font-bold">Renee Wells</p>
+                        <p class="text-[gray]">Product Designer, Quotient</p>
+                    </div>
+                </div>
+                <p class="text-[gray]">10 min read  November 10, 2023</p>
+            </div>
+            <img class="w-[1100px]" src="./img/Rectangle 44.png" alt="">
+
+            <p class="text-[20px] py-[70px]">Depending on the input, this can result in using a lot of processing power and time. The whole process would take approximately 5 seconds to return a result to the client. Keep in mind we’re talking about 1 item, a contact from a contact book. After a while, a new requirement is added. Solution must support companies that manage their contacts organized in files. We agreed to develop a web application that would support upload of dataset files, like .csv. The new web application should support third party integrations. Some of them are the ESP/CRM services, like Mailchimp. User does not need to see the result immediately. System can later notify the user about the result, when the process finishes. This information is the key that we need to leverage on when developing our solution. So here’s how we did it.</p>
+
+                <h1 class="font-bold text-[30px]">Initial approach</h1>
+                <p class="text-[20px] py-[70px] ">Our initial approach went like this: The web application would read a .csv file line-by-line and submit an array of entries to the backend REST API. Processing is in real time, immediately after the user makes a request for the process to start, he expects a result. Another approach is to apply vertical scaling to AWS architecture. Meaning we used larger, more expensive instances that have more RAM and processing power. This system worked well for smaller datasets, maybe up to 5k entries, but for larger datasets multiple problems arose. This solution is prone to failure due to long request time. Also, because of some 3rd party services that aren’t optimized for large scale loads or they don’t have batch endpoints. 3rd party services also tend to protect their architecture from making a huge bill on their end. The whole process was done in real-time. The request can take a lot of time hanging in there while the backend would do all the work and return the result to the client. The request was limited to 300 seconds (at time of writing the article) before AWS would cancel it… Also I need to mention that the user has to wait a few minutes to see the results. They can’t use the app during the process, which makes for a bad user experience.</p>
+        </div>
+
+        <div class="flex justify-center gap-[80px] w-[940px] h-[390px] m-auto pb-[130px]">
+            <img class="w-[200px] h-[200px]" src="./img/Rectangle 45.png" alt="">
+            <div class="flex flex-col gap-[20px] ">
+                <img class="w-[383px] h-[32px]" src="./img/Frame 1171275083.png" alt="">
+                <p class="text-[gray]">Written by</p>
+                <h1 class="font-bold text-[30px]">Renee Wells</h1>
+                <p class="text-[gray]">Product Designer, Quotient</p>
+
+                <p>Skilled in React Native, iOS and backend, Toni has a demonstrated knowledge of the information technology and services industry, with plenty of hands-on experience to back it up.</p>
+            </div>
+        </div>
+
+
+        <footer class="w-[100%] bg-[#1D1E25]">
+            <section class="w-[85%] m-auto pt-[100px] pb-[60px] realtive  gap-[30px] sm:gap-[0px] flex flex-col sm:flex-row justify-between ">
+                <aside class="flex flex-col  ">
+                    <p class="text-white text-[30px] sm:text-[70px] mb-[20px] font-bold sm:leading-[120px]">Think beyond the wave</p>
+                   <p class="text-[#AFB3BB] text-[18px] sm:text-[18px]">Ask about Sans products, pricing, implementation, or anything  <br>else. Our highly trained reps are standing by, ready to help</p>    
+                </aside>
+                <aside class="relative top-0 flex flex-col justify-center">
+                    <button class="py-[15px] relative z-10 px-[50px] rounded-[30px] bg-white text-[#1D1E25] tracking-[2px]">Try for free</button>
+                </aside>
+            </section>
+            <section class="w-[85%] py-[100px] border-b-2 border-solid border-gray-400 justify-between flex flex-col sm:flex-row gap-[40px] m-auto">
+                <div>
+                    <img src="./img/Logo (1).png" alt="">
+                    <p class="text-[#7E8492] text-[16px]">We built an elegant solution. Our team <br> created a fully integrated sales and <br> marketing solution for SMBs</p>
+                </div>
+                <div class="flex flex-col text-[#7E8492] gap-[15px]">
+                    <p class="text-white font-bold">Company</p>
+                    <p>Pricing</p>
+                    <p>About</p>
+                    <p>Blog</p>
+                    <p>Jobs</p>
+                </div>
+                <div class="flex flex-col text-[#7E8492] gap-[15px]">
+                    <p class="text-white font-bold">Product</p>
+                    <p>Sales Software</p>
+                    <p>Marketplace</p>
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                </div>
+                <div class="flex text-[#7E8492] flex-col gap-[15px]">
+                    <p class="text-white font-bold">Discover</p>
+                    <p>CRM Comparision</p>
+                    <p>Partner Program</p>
+                    <p>What is CRM</p>
+                    <p>Resource</p>
+                </div>
+                <div class="flex flex-col text-[#7E8492] relative z-10 gap-[15px]">
+                    <p class="text-white font-bold">Help Center</p>
+                    <p>Community</p>
+                    <p>Knowledge Base</p>
+                    <p>Academy</p>
+                    <p>Support</p>
+                </div>
+            </section>
+        
+            <div class="text-[#AFB3BB] w-[85%] m-auto text-[18px] flex gap-[30px] sm:gap-[0px] flex-col sm:flex-row justify-between items-start sm:items-center  tracking-[2px] py-[30px]">
+                <div class="flex flex-col sm:flex-row gap-[40px] ">
+                  <img src="./img/Social media.png" alt="">
+                <p>Privacy Policy</p>
+                <p>Terms & Conditions</p>
+                <p>Support</p>  
+                </div>
+                
+                <p>© Copyright 2023 All Rights Reserved</p>
+            </div>
+        </footer>
 </body>
 </html>
